@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css"/>
+<head>
+<body>
+    <div class="Page" id="LoginPage">
+        <h1>Qual o seu nome?</h1>
+        <input type="text" id="LoginNameInput"/>
+    </div>
+    
+    <div class="Page" id="ChatPage">
+        <div class="ChatArea">
+            <ul class="ChatList"></ul>
+            <ul class="UserList"></ul>
+        </div>
+        <div class="ChatInput">
+            <input type="text" id="ChatTextInput" placeholder="Digite uma mensagem e aperte enter para enviar"/>
+        </div>
+    </div> 
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>
